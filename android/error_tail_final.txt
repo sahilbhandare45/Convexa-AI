@@ -1,0 +1,125 @@
+﻿> Task :gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:shared:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:shared:compileJava NO-SOURCE
+> Task :gradle-plugin:shared:processResources NO-SOURCE
+> Task :gradle-plugin:shared:classes UP-TO-DATE
+> Task :gradle-plugin:shared:jar UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:settings-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:jar UP-TO-DATE
+.\gradlew.bat : 
+At line:1 char:13
++ cd android; .\gradlew.bat 
+clean assembleRelease > 
+build_log_final.txt ...
++             ~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~
+    + CategoryInfo          :  
+   NotSpecified: (:String) []  
+  , RemoteException
+    + FullyQualifiedErrorId :  
+   NativeCommandError
+ 
+FAILURE: Build failed with an 
+exception.
+
+* What went wrong:
+A problem occurred configuring 
+root project 
+'RunAnywhereStarter'.
+> Could not resolve all 
+dependencies for configuration 
+'classpath'.
+   > Cannot resolve external 
+dependency 
+com.android.tools.build:gradle 
+because no repositories are 
+defined.
+     Required by:
+         root project :
+   > Cannot resolve external 
+dependency org.jetbrains.kotlin
+:kotlin-gradle-plugin because 
+no repositories are defined.
+     Required by:
+         root project :
+   > Cannot resolve external 
+dependency org.jetbrains.kotlin
+:kotlin-stdlib:2.1.20 because 
+no repositories are defined.
+     Required by:
+         root project : > 
+project :gradle-plugin:react-na
+tive-gradle-plugin
+         root project : > 
+project :gradle-plugin:react-na
+tive-gradle-plugin > project 
+:gradle-plugin:shared
+   > Cannot resolve external 
+dependency org.jetbrains.kotlin
+:kotlin-gradle-plugin:2.1.20 
+because no repositories are 
+defined.
+     Required by:
+         root project : > 
+project :gradle-plugin:react-na
+tive-gradle-plugin
+   > Cannot resolve external 
+dependency com.android.tools.bu
+ild:gradle:8.12.0 because no 
+repositories are defined.
+     Required by:
+         root project : > 
+project :gradle-plugin:react-na
+tive-gradle-plugin
+   > Cannot resolve external 
+dependency com.google.code.gson
+:gson:2.8.9 because no 
+repositories are defined.
+     Required by:
+         root project : > 
+project :gradle-plugin:react-na
+tive-gradle-plugin
+         root project : > 
+project :gradle-plugin:react-na
+tive-gradle-plugin > project 
+:gradle-plugin:shared
+   > Cannot resolve external 
+dependency com.google.guava:gua
+va:31.0.1-jre because no 
+repositories are defined.
+     Required by:
+         root project : > 
+project :gradle-plugin:react-na
+tive-gradle-plugin
+         root project : > 
+project :gradle-plugin:react-na
+tive-gradle-plugin > project 
+:gradle-plugin:shared
+   > Cannot resolve external 
+dependency 
+com.squareup:javapoet:1.13.0 
+because no repositories are 
+defined.
+     Required by:
+         root project : > 
+project :gradle-plugin:react-na
+tive-gradle-plugin
+
+* Try:
+> Run with --stacktrace option 
+to get the stack trace.
+> Run with --info or --debug 
+option to get more log output.
+> Run with --scan to get full 
+insights.
+> Get more help at 
+https://help.gradle.org.
+
+BUILD FAILED in 1s
+6 actionable tasks: 6 up-to-date

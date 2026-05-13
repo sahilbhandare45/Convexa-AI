@@ -1,0 +1,26 @@
+{
+  "installationFolder": "C:\\Users\\Sahil\\.gemini\\antigravity\\scratch\\convexa_frontend\\node_modules\\react-native-nitro-modules\\android\\build\\intermediates\\prefab_package\\release\\prefab",
+  "gradlePath": ":react-native-nitro-modules",
+  "packageInfo": {
+    "packageName": "react-native-nitro-modules",
+    "packageSchemaVersion": 2,
+    "packageDependencies": [],
+    "modules": [
+      {
+        "moduleName": "NitroModules",
+        "moduleHeaders": "C:\\Users\\Sahil\\.gemini\\antigravity\\scratch\\convexa_frontend\\node_modules\\react-native-nitro-modules\\android\\build\\headers\\nitromodules",
+        "moduleExportLibraries": [],
+        "abis": [
+          {
+            "abiName": "arm64-v8a",
+            "abiApi": 24,
+            "abiNdkMajor": 28,
+            "abiStl": "c++_shared",
+            "abiLibrary": "C:\\Users\\Sahil\\.gemini\\antigravity\\scratch\\convexa_frontend\\node_modules\\react-native-nitro-modules\\android\\build\\intermediates\\cxx\\RelWithDebInfo\\525g6s2t\\obj\\arm64-v8a\\libNitroModules.so",
+            "abiAndroidGradleBuildJsonFile": "C:\\Users\\Sahil\\.gemini\\antigravity\\scratch\\convexa_frontend\\node_modules\\react-native-nitro-modules\\android\\.cxx\\RelWithDebInfo\\525g6s2t\\arm64-v8a\\android_gradle_build.json"
+          }
+        ]
+      }
+    ]
+  }
+}

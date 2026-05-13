@@ -1,0 +1,215 @@
+﻿> Task :gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:shared:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:shared:compileJava NO-SOURCE
+> Task :gradle-plugin:shared:processResources NO-SOURCE
+> Task :gradle-plugin:shared:classes UP-TO-DATE
+> Task :gradle-plugin:shared:jar UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:settings-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:jar UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:react-native-gradle-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:react-native-gradle-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:jar UP-TO-DATE
+
+> Configure project :react-native-nitro-modules
+[NitroModules] ? Your app is boosted by nitro modules!
+
+> Configure project :runanywhere_core
+[NitroModules] ? runanywherecore is boosted by nitro!
+[RunAnywhereCore] Using node binary: node
+
+> Configure project :runanywhere_llamacpp
+[NitroModules] ? runanywherellama is boosted by nitro!
+[RunAnywhereLlama] Using node binary: node
+
+> Configure project :runanywhere_onnx
+[NitroModules] ? runanywhereonnx is boosted by nitro!
+[RunAnywhereONNX] Using node binary: node
+
+> Task :app:generateAutolinkingNewArchitectureFiles UP-TO-DATE
+> Task :app:generateAutolinkingPackageList UP-TO-DATE
+> Task :app:generateCodegenSchemaFromJavaScript SKIPPED
+> Task :app:generateCodegenArtifactsFromSchema SKIPPED
+> Task :app:generateReactNativeEntryPoint UP-TO-DATE
+> Task :react-native-community_slider:generateCodegenSchemaFromJavaScript UP-TO-DATE
+> Task :react-native-community_slider:generateCodegenArtifactsFromSchema UP-TO-DATE
+> Task :react-native-community_slider:preBuild UP-TO-DATE
+> Task :react-native-fs:preBuild UP-TO-DATE
+> Task :react-native-gesture-handler:generateCodegenSchemaFromJavaScript UP-TO-DATE
+> Task :react-native-gesture-handler:generateCodegenArtifactsFromSchema UP-TO-DATE
+> Task :react-native-gesture-handler:preBuild UP-TO-DATE
+> Task :react-native-linear-gradient:preBuild UP-TO-DATE
+> Task :react-native-live-audio-stream:preBuild UP-TO-DATE
+> Task :react-native-nitro-modules:generateCodegenSchemaFromJavaScript UP-TO-DATE
+> Task :react-native-nitro-modules:generateCodegenArtifactsFromSchema UP-TO-DATE
+> Task :react-native-nitro-modules:prepareHeaders UP-TO-DATE
+> Task :react-native-nitro-modules:preBuild UP-TO-DATE
+> Task :react-native-safe-area-context:generateCodegenSchemaFromJavaScript UP-TO-DATE
+> Task :react-native-safe-area-context:generateCodegenArtifactsFromSchema UP-TO-DATE
+> Task :react-native-safe-area-context:preBuild UP-TO-DATE
+> Task :react-native-screens:generateCodegenSchemaFromJavaScript UP-TO-DATE
+> Task :react-native-screens:generateCodegenArtifactsFromSchema UP-TO-DATE
+> Task :react-native-screens:preBuild UP-TO-DATE
+> Task :react-native-sound:generateCodegenSchemaFromJavaScript UP-TO-DATE
+> Task :react-native-sound:generateCodegenArtifactsFromSchema UP-TO-DATE
+> Task :react-native-sound:preBuild UP-TO-DATE
+> Task :react-native-sqlite-storage:preBuild UP-TO-DATE
+> Task :react-native-svg:generateCodegenSchemaFromJavaScript UP-TO-DATE
+> Task :react-native-svg:generateCodegenArtifactsFromSchema UP-TO-DATE
+> Task :react-native-svg:preBuild UP-TO-DATE
+> Task :react-native-vector-icons:generateCodegenSchemaFromJavaScript UP-TO-DATE
+> Task :react-native-vector-icons:generateCodegenArtifactsFromSchema UP-TO-DATE
+> Task :react-native-vector-icons:preBuild UP-TO-DATE
+
+> Task :runanywhere_core:downloadNativeLibs
+[RunAnywhereCore] ? Using bundled native libraries from npm package for ABIs: arm64-v8a, x86_64
+
+> Task :runanywhere_core:generateCodegenSchemaFromJavaScript
+.\gradlew.bat : No modules to 
+process in 
+combine-js-to-schema-cli. If this 
+is unexpected, please check if you 
+set up your NativeComponent 
+correctly. See 
+combine-js-to-schema.js for how 
+codegen finds modules.
+At line:1 char:13
++ cd android; .\gradlew.bat 
+assembleRelease > build_log_v3.txt 
+2>&1; Ge ...
++             ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotS 
+   pecified: (No modules to p...   
+  finds modules.:String) [], Rem   
+ oteException
+    + FullyQualifiedErrorId : Nati 
+   veCommandError
+ 
+
+> Task :runanywhere_core:generateCodegenArtifactsFromSchema
+> Task :runanywhere_core:preBuild
+
+> Task :runanywhere_llamacpp:downloadNativeLibs
+[RunAnywhereLlama] ? Using bundled native libraries from npm package for ABIs: arm64-v8a, x86_64
+
+> Task :runanywhere_llamacpp:generateCodegenSchemaFromJavaScript
+No modules to process in 
+combine-js-to-schema-cli. If this 
+is unexpected, please check if you 
+set up your NativeComponent 
+correctly. See 
+combine-js-to-schema.js for how 
+codegen finds modules.
+
+> Task :runanywhere_llamacpp:generateCodegenArtifactsFromSchema
+> Task :runanywhere_llamacpp:preBuild
+
+> Task :runanywhere_onnx:downloadNativeLibs
+[RunAnywhereONNX] ? Using bundled native libraries from npm package for ABIs: arm64-v8a, x86_64
+
+> Task :runanywhere_onnx:generateCodegenSchemaFromJavaScript
+No modules to process in 
+combine-js-to-schema-cli. If this 
+is unexpected, please check if you 
+set up your NativeComponent 
+correctly. See 
+combine-js-to-schema.js for how 
+codegen finds modules.
+
+> Task :runanywhere_onnx:generateCodegenArtifactsFromSchema
+> Task :runanywhere_onnx:preBuild
+> Task :app:preBuild
+> Task :app:preReleaseBuild
+> Task :react-native-nitro-modules:preReleaseBuild UP-TO-DATE
+> Task :react-native-nitro-modules:configureCMakeRelWithDebInfo[arm64-v8a]
+> Task :react-native-nitro-modules:buildCMakeRelWithDebInfo[arm64-v8a]
+> Task :react-native-nitro-modules:configureCMakeRelWithDebInfo[armeabi-v7a]
+> Task :react-native-nitro-modules:buildCMakeRelWithDebInfo[armeabi-v7a]
+> Task :react-native-nitro-modules:configureCMakeRelWithDebInfo[x86]
+> Task :react-native-nitro-modules:buildCMakeRelWithDebInfo[x86]
+> Task :react-native-nitro-modules:configureCMakeRelWithDebInfo[x86_64]
+> Task :react-native-nitro-modules:buildCMakeRelWithDebInfo[x86_64]
+> Task :react-native-nitro-modules:externalNativeBuildRelease
+> Task :react-native-nitro-modules:generateJsonModelRelease
+> Task :react-native-nitro-modules:prefabReleaseConfigurePackage
+> Task :app:configureCMakeRelWithDebInfo[arm64-v8a]
+> Task :react-native-nitro-modules:prefabReleasePackage UP-TO-DATE
+
+> Task :app:buildCMakeRelWithDebInfo[arm64-v8a] FAILED
+C/C++: ninja: error: Stat(safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/C_/Users/Sahil/.gemini/antigravity/scratch/convexa_frontend/node_modules/react-native-safe-area-context/common/cpp/react/renderer/components/safeareacontext/RNCSafeAreaViewShadowNode.cpp.o): Filename longer than 260 characters
+
+[Incubating] Problems report is available at: file:///C:/Users/Sahil/.gemini/antigravity/scratch/convexa_frontend/android/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an 
+exception.
+
+* What went wrong:
+Execution failed for task ':app:bui
+ldCMakeRelWithDebInfo[arm64-v8a]'.
+> com.android.ide.common.process.Pr
+ocessException: ninja: Entering 
+directory `C:\Users\Sahil\.gemini\a
+ntigravity\scratch\convexa_frontend
+\android\app\.cxx\RelWithDebInfo\6u
+1h4r53\arm64-v8a'
+  [0/2] Re-checking globbed 
+directories...
+  
+  C++ build system [build] failed 
+while executing:
+      @echo off
+      "C:\\Users\\Sahil\\AppData\\L
+ocal\\Android\\Sdk\\cmake\\3.22.1\\
+bin\\ninja.exe" ^
+        -C ^
+        "C:\\Users\\Sahil\\.gemini\
+\antigravity\\scratch\\convexa_fron
+tend\\android\\app\\.cxx\\RelWithDe
+bInfo\\6u1h4r53\\arm64-v8a" ^
+        appmodules ^
+        react_codegen_RNCSlider ^
+        react_codegen_rnscreens ^
+        react_codegen_rnsvg ^
+        
+react_codegen_safeareacontext
+    from C:\Users\Sahil\.gemini\ant
+igravity\scratch\convexa_frontend\a
+ndroid\app
+  ninja: error: Stat(safeareacontex
+t_autolinked_build/CMakeFiles/react
+_codegen_safeareacontext.dir/C_/Use
+rs/Sahil/.gemini/antigravity/scratc
+h/convexa_frontend/node_modules/rea
+ct-native-safe-area-context/common/
+cpp/react/renderer/components/safea
+reacontext/RNCSafeAreaViewShadowNod
+e.cpp.o): Filename longer than 260 
+characters
+
+* Try:
+> Run with --stacktrace option to 
+get the stack trace.
+> Run with --info or --debug 
+option to get more log output.
+> Run with --scan to get full 
+insights.
+
+> Get more help at 
+https://help.gradle.org.
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 10s
+52 actionable tasks: 21 executed, 31 up-to-date

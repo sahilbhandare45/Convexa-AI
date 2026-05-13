@@ -1,0 +1,100 @@
+buildscript {
+    ext {
+        buildToolsVersion = "36.0.0"
+        minSdkVersion = 24
+        compileSdkVersion = 36
+        targetSdkVersion = 36
+        ndkVersion = "28.0.13004108"
+        kotlinVersion = "2.1.20"
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+apply plugin: "com.facebook.react.rootproject"
+
+// =============================================================================
+// Fix: Force all subprojects to use the same Kotlin stdlib version
+// This prevents version mismatch errors with third-party libraries
+// =============================================================================
+subprojects {
+    configurations.configureEach {
+        resolutionStrategy.eachDependency { details ->
+            if (details.requested.group == 'org.jetbrains.kotlin') {
+                details.useVersion rootProject.ext.kotlinVersion
+            }
+        }
+    }
+}
+
+// =============================================================================
+// Fix: Node.js not found when running from Android Studio
+// Android Studio doesn't inherit terminal PATH, so we need to explicitly set it
+// =============================================================================
+// =============================================================================
+// Fix: Node.js discovery for Windows/macOS/Linux
+// Handles both POSIX and Windows environments correctly
+// =============================================================================
+def nodeExec = "node"
+if (org.gradle.internal.os.OperatingSystem.current().isWindows()) {
+    nodeExec = "node.exe"
+}
+
+// Find node binary path
+def findNode() {
+    def nodeExec = org.gradle.internal.os.OperatingSystem.current().isWindows() ? "node.exe" : "node"
+    
+    // 1. Try common Unix paths
+    def unixPaths = ["/opt/homebrew/bin/node", "/usr/local/bin/node", "/usr/bin/node"]
+    for (p in unixPaths) {
+        if (file(p).exists()) return p
+    }
+    
+    // 2. Try common Windows paths
+    if (org.gradle.internal.os.OperatingSystem.current().isWindows()) {
+        def winPaths = [
+            "C:/nvm4w/nodejs/node.exe",
+            "C:/Program Files/nodejs/node.exe",
+            "C:/Program Files (x86)/nodejs/node.exe"
+        ]
+        for (p in winPaths) {
+            if (file(p).exists()) return p
+        }
+    }
+    
+    // 3. Fallback to just "node" (rely on PATH)
+    return nodeExec
+}
+
+def nodePath = findNode()
+ext.NODE_BINARY = nodePath
+
+// Ensure PATH is passed to tasks that execute node
+gradle.taskGraph.whenReady { taskGraph ->
+    def separator = org.gradle.internal.os.OperatingSystem.current().isWindows() ? ";" : ":"
+    def nodeDir = file(nodePath).parent ?: ""
+    
+    taskGraph.allTasks.each { task ->
+        if (task.hasProperty('environment')) {
+            def currentPath = System.getenv("PATH") ?: ""
+            if (nodeDir) {
+                task.environment("PATH", "${nodeDir}${separator}${currentPath}")
+            }
+            task.environment("NODE_BINARY", nodePath)
+        }
+    }
+}
